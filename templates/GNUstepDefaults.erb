@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//GNUstep//DTD plist 0.9//EN" "http://www.gnustep.org/plist-0_9.xml">
+<plist version="0.9">
+<dict>
+    <key>NSGlobalDomain</key>
+    <dict>
+    </dict>
+    <key>sogod</key>
+    <dict>
+	<key>OCSFolderInfoURL</key>
+	<string>mysql://<%= dbuser %>:<%= dbpass %>@localhost:3306/sogo/sogo_folder_info</string>
+	<key>SOGoACLsSendEMailNotifications</key>
+	<string>YES</string>
+	<key>SOGoAppointmentSendEMailNotifications</key>
+	<string>YES</string>
+	<key>SOGoAuthenticationMethod</key>
+	<string>=</string>
+	<key>SOGoDraftsFolderName</key>
+	<string>INBOX/Drafts</string>
+	<key>SOGoFoldersSendEMailNotifications</key>
+	<string>YES</string>
+	<key>SOGoIMAPServer</key>
+	<string>localhost</string>
+	<key>SOGoLDAPUserManagerCleanupInterval</key>
+	<string>2</string>
+	<key>SOGoLanguage</key>
+	<string>English</string>
+	<key>SOGoMailDomain</key>
+	<string>deeproot.in</string>
+	<key>SOGoMailingMechanism</key>
+	<string>smtp</string>
+	<key>SOGoOtherUsersFolderName</key>
+	<string>Other Users</string>
+	<key>SOGoProfileURL</key>
+	<string>mysql://<%= dbuser %>:<%= dbpass %>@localhost:3306/sogo/sogo_user_profile</string>
+	<key>SOGoSMTPServer</key>
+	<string>localhost</string>
+	<key>SOGoSentFolderName</key>
+	<string>INBOX/Sent</string>
+	<key>SOGoSharedUsersFolderName</key>
+	<string>Shared Folders</string>
+	<key>SOGoSpecialFoldersInRoot</key>
+	<string>=</string>
+	<key>SOGoTimeZone</key>
+	<string><%= timezone %></string>
+	<key>SOGoTrashFolderName</key>
+	<string>INBOX/Trash</string>
+	<key>SOGoUserSources</key>
+	<array>
+	    <dict>
+		<key>CNFieldName</key>
+		<string>cn</string>
+		<key>IDFieldName</key>
+		<string>uid</string>
+		<key>IMAPHostFieldName</key>
+		<string>mailHost</string>
+		<key>UIDFieldName</key>
+		<string>uid</string>
+		<key>baseDN</key>
+		<string><%= basedn %></string>
+		<key>bindDN</key>
+		<string><%= binddn %></string>
+		<key>bindPassword</key>
+		<string><%= bindpwd %></string>
+		<key>canAuthenticate</key>
+		<string>YES</string>
+		<key>displayName</key>
+		<string>deepOfix Addressbook</string>
+		<key>hostname</key>
+		<string>localhost</string>
+		<key>id</key>
+		<string>deepofix</string>
+		<key>isAddressBook</key>
+		<string>YES</string>
+		<key>port</key>
+		<string>389</string>
+		<key>type</key>
+		<string>ldap</string>
+	    </dict>
+	</array>
+	<key>SxVMemLimit</key>
+	<string>768</string>
+    </dict>
+</dict>
+</plist>
